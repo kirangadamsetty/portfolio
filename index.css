@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#icon-container a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: "Bree-Serif";
+    font-weight: 600;
+    font-size: 23px;
+    color: yellow;
+    text-shadow: 0px 0px 10px yellow;
+}
+
+#icon-container a:hover {
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 10px;
+    box-shadow: 8px 8px 10px yellow;
+}
+
+
+
+
+.default {
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 8px 8px 10px yellow;
+}
+
+#logo {
+    font-family: "Lobster";
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+    font-size: 50px;
+    color: white;
+    animation: change 1s;
+}
+
+
+
+
+@media(max-width:576px) {
+    #logo {
+        font-size: 30px;
+    }
+
+    #nav-button {
+        width: 25px !important;
+        height: 20px;
+    }
+}
+
+#span {
+    font-family: "Bree-Serif";
+    font-weight: bold;
+    text-shadow: 0px 0px 10px red;
+    font-size: 65px;
+    color: white;
+
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 55px;
+    white-space: nowrap;
+    color: yellow;
+    margin: 40px;
+
+    animation: modify 3s;
+}
+
+.font-family {
+    font-family: "Bree-Serif";
+}
+
+@keyframes modify {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+
+}
+
+
+@media (min-width:768px) {
+    #logo {
+        font-size: 60px;
+    }
+
+
+}
+
+
+
+
+
+.nav-list {
+    color: yellow;
+    font-size: 25px;
+}
+
+
+.top-background {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/786/875/686/man-made-floor-wallpaper-preview.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+
+
+.person-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    opacity: 0.7;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 100px yellow;
+    animation: modify 3s;
+}
+
+@media(min-width:768px) {
+    .person-image:hover {
+        box-shadow: 0 0 0;
+        border: none;
+        transition: 2s;
+
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    .top-background {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-name {
+        order: 2;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #span {
+        font-size: 30px;
+    }
+
+    .person-image {
+        width: 250px;
+        height: 250px;
+        margin: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    #span {
+        font-size: 65px;
+    }
+
+    .profile-name {
+        font-size: 30px;
+    }
+
+}
+
+
+#button {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 30px lightblue;
+}
+
+@media (min-width:768px) {
+    #button {
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+}
+
+#button:hover {
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.about-container {
+    background-image: url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 10px;
+}
+
+
+.about-matter {
+    margin: 40px;
+    font-weight: 500;
+    padding: 20px;
+    color: yellow;
+    font-size: 25px;
+    width: 50%;
+    animation: modify 3s;
+}
+
+@media (max-width:769px) {
+    .about-container {
+        flex-direction: column;
+
+    }
+
+    .about-matter {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+.about-paragraph {
+    font-family: "Bree-Serif";
+    font-weight: 500;
+    font-size: 25px;
+    color: yellow;
+}
+
+.about-heading {
+
+    font-family: "Bree-Serif";
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    animation: change 1s infinite;
+}
+
+.icon-background {
+    border-radius: 100%;
+    border: 1px solid black;
+    height: 120px;
+    background-color: red;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 50px;
+
+}
+
+.education-paragraph {
+    font-family: "Bree-Serif";
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+@media(max-width:579px) {
+    .icon {
+        font-size: 20px;
+    }
+
+    .icon-background {
+        height: 40px;
+        width: 40px;
+    }
+
+    .education-paragraph {
+        font-size: 15px;
+
+    }
+
+}
+
+
+
+
+
+.complete-education-container {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/786/875/686/man-made-floor-wallpaper-preview.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.horizontal-line {
+    transform: rotate(90deg);
+    width: 35px;
+    color: black;
+    border: 3px solid black;
+}
+
+.flex-container {
+
+    display: flex;
+
+
+}
+
+.inner-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-menu-heading {
+    color: yellow !important;
+    font-family: "Bree Serif";
+    font-weight: 800;
+    text-shadow: 0px 0px 8px yellow;
+
+}
+
+.explore-menu-section {
+    min-height: 100vh;
+    background-image: url("https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/07/shutterstock_582803470.jpg?w=750");
+    background-size: cover;
+    padding: 15px;
+    background-attachment: fixed;
+    min-width: 100vw;
+}
+
+.explore-card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 10px 10px 10px black !important;
+    transition: 0.5s ease;
+}
+
+@media (min-width:768px) {
+    .explore-card:hover {
+        box-shadow: 0px 0px 10px yellow;
+        border: none;
+        background: red;
+    }
+}
+
+.explore-image {
+    border-radius: 20px;
+    border: 2px solid yellow;
+    box-shadow: 10px 10px 10px black !important;
+}
+
+.card-heading {
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+    color: yellow;
+    font-family: "Bree Serif";
+}
+
+.link-ele {
+    font-weight: 500;
+    color: yellow;
+}
+
+.icon-ele {
+    font-size: 50px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.icon-ele:hover {
+    text-shadow: 0px 0px 10px yellow;
+    color: red;
+}
+
+.contact-container {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/786/875/686/man-made-floor-wallpaper-preview.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+
+
+
+
+
+
+}
